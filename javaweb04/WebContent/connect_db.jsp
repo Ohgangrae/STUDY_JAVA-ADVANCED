@@ -20,7 +20,7 @@
 //DB 연결
 	String url = "jdbc:mysql://localhost:3306/";
 	String id = "root";
-	String pw = "oasis1026*";
+	String pw = "0000";
 	
 	Connection conn = null;
 	
