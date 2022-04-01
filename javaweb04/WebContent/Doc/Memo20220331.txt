@@ -34,3 +34,41 @@ WEB-INF/lib/mysql-connector-java-8.0.28.jar
 	} catch (SQLException sqlerr) {
 		out.print("SQL DB 연결 실패<br>");
 	}
+	
+	
+	
+	
+1.데이터 베이스 만들기
+
+String sql = "CREATE DATABASE univ2"; // DB생성 sql 구문
+
+2. 데이터 베이스 삭제
+
+String sql = "DROP DATABASE univ2"; // DB생성 sql 구문
+
+3. 테이블 만들기(복잡해서 안쓰는 방법)
+
+String sql = "CREATE TABLE student("
+			+"hakbun int not null,"
+			+"name   varchar(10),"		//varchar은 문자
+			+"dept   varchar(20),"
+			+"primary key(hakbun))";
+
+
+*. 테이블에 데이터 넣기
+String hakbun = request.getParameter("hakbun");
+	String name = request.getParameter("name");
+	String dept = request.getParameter("dept");
+
+	String sql = "INSERT INTO student VALUES(?,?,?)";
+	pstmt = conn.prepareStatement(sql);
+		pstmt.setString(1, hakbun);
+		pstmt.setString(2, name);
+		pstmt.setString(3, dept);
+	pstmt.executeUpdate();
+
+*. 테이블에서 데이터 가져오기
+	String sql = "SELECT * FROM student";
+	pstmt = conn.prepareStatement(sql);
+
+	rset = pstmt.executeQuery();
