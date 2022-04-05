@@ -3,7 +3,7 @@
 Sevlet 더이상 사용되지 않음
 
 JSP
-프로젝트 샌성 - JSP생성 - JSP실행 - 결과확인
+프로젝트 생성 - JSP생성 - JSP실행 - 결과확인
 
 Spring
 
@@ -22,7 +22,7 @@ WebContent
 tomcat v8.5 sever 선택
 후
 tomcat v8.5 다운로드(미 설치시)
-압출 해제 파일을 경로 지정 실행
+압축 해제 파일을 경로 지정 실행
 
 화면에 정상 출력을 확인.
 
