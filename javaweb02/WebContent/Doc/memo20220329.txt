@@ -71,3 +71,10 @@ JSP 에서 한글처리
 		JSP 생성시 자동입력이라 구태여 입력할 필요는 없다. 
 	2. <% request.setCharacterEncoding("UTF-8"); %>
 		맨위에 넣으면 된다.
+		
+		
+form 태그 자식 중에 input 태그 내의 name 속성의 속성명은
+주소상에 Parameter 값이 된다.
+
+주소상에 Parameter 값은 request 객체한테 담겨있다.
+name 속성에 속성값과 동일하게 담겨있다.
