@@ -1,19 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<style>/* 눈누에서 가져온 폰트 */
-@font-face {
-    font-family: 'KOTRAHOPE';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-body {
-	font-family: 'KOTRAHOPE';
-	padding-bottom: 70px;
-}
 
-</style>
 
+<!-- 네비게이션 바 시작-->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
   <div class="container-fluid">
@@ -62,3 +51,4 @@ body {
     </div>
   </div>
 </nav>
+<!-- 네비게이션 바 끝-->
