@@ -1,0 +1,34 @@
+package jdbc;
+
+public class UserDAO {
+
+	// 회원가입
+	public boolean insert() {
+
+		return true;
+	}
+
+	// 회원확인(이미 있는지)
+	public boolean exists() {
+
+		return true;
+	}
+
+	// 회원탈퇴
+	public boolean delete() {
+
+		return true;
+	}
+
+	// 로그인
+	public boolean login() {
+
+		return true;
+	}
+
+	// 로그아웃
+	public boolean logout() {
+
+		return true;
+	}
+}

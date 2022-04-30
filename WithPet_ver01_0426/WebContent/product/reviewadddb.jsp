@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ page import="dao.ProductDAO.*"%>
+<%@ page import="dto.ReviewDTO.*"%>
+<%@ page import="dao.ProductDAO"%>
+<%@ page import="dto.ProductDTO"%>
+<%@ page import="java.util.*"%>
+
+<%
+	request.setCharacterEncoding("utf-8");
+
+String score = request.getParameter("score");
+String content = request.getParameter("content");
+String userId = "10";//request.getParameter("userId");
+String productId = "1"; //request.getParameter("productId");
+ 
+
+ 
+ ProductDAO dao = new ProductDAO();
+ 
+ if(!(dao.insertProductReview(score, content, userId, productId)==0)) {
+	 response.sendRedirect("productdetail.jsp");
+ }else {
+	 response.sendRedirect("user/login.jsp"); 
+ }
+ %>
+ 
+ 
+ 
