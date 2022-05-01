@@ -7,7 +7,6 @@ INDEX VERSION 1.4+C:\eclipse\javaadvclass\.metadata\.plugins\org.eclipse.wst.jsd
 1134055010.index
 2231240213.index
 4273354177.index
-1222810968.index
 3037030042.index
 3778770776.index
 1387677242.index
