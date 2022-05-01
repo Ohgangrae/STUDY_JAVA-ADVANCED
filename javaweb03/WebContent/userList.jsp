@@ -4,7 +4,7 @@
 <%
 
 	Class.forName("com.mysql.jdbc.Driver");
-	Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysns","root","oasis1026*");
+	Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysns","root","0000");
 	
 	/* Statement stmt = conn.createStatement();
 	ResultSet rs = stmt.executQurey("Select id, name From user"); */

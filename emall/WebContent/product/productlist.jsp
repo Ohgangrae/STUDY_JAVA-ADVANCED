@@ -55,7 +55,7 @@
 			<!-- 1칸짜리이기 때문에 for문을 돌려서 늘려야함 -->
 			<div class="col-md-4">
 				<!-- 4개씩 -->
-				<img src="" style="width: 100%">
+				<img src="/images/<%=product.getPimage() %>" style="width: 100%">
 				<!-- 칸에 꽉 채워라 -->
 				<h3><%=product.getPname() %></h3>
 				<p><%=product.getPprice() %>원
