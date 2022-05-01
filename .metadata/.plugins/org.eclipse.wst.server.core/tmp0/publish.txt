@@ -1,0 +1,6 @@
+#Tomcat publish data
+#Fri Apr 29 16:05:28 KST 2022
+org.eclipse.jst.j2ee.server\:mysql-connector-java-8.0.20=WEB-INF/lib/mysql-connector-java-8.0.20.jar
+org.eclipse.jst.j2ee.server\:mysql-connector-java-8.0.28=WEB-INF/lib/mysql-connector-java-8.0.28.jar
+org.eclipse.jst.j2ee.server\:commons-fileupload-1.4=WEB-INF/lib/commons-fileupload-1.4.jar
+org.eclipse.jst.j2ee.server\:commons-io-2.11.0=WEB-INF/lib/commons-io-2.11.0.jar

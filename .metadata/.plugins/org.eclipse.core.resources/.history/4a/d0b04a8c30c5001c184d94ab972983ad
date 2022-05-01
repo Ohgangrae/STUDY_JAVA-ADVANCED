@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ page import="dao.ProductDAO.*"%>
+<%@ page import="dto.ReviewDTO.*"%>
+<%@ page import="dao.ProductDAO"%>
+<%@ page import="dto.ProductDTO"%>
+<%@ page import="java.util.*"%>
+
+<%
+	request.setCharacterEncoding("utf-8");
+
+String id = null;
+String score = null;
+String content = null;
+String userId = null;
+String productId = null;
+String status = null;
+
+//String id = request.getParameter("id");
+String score = request.getParameter("score");
+String content = request.getParameter("content");
+String userId = request.getParameter("userId");
+String productId = request.getParameter("productId");
+//String status = request.getParameter("status");
+ 
+
+ 
+ ProductDAO dao = new ProductDAO();
+ int result = dao.insert(id, score, content, userId, productId, status);
+ 
+ if(result == 1) {
+	 response.sendRedirect("../review/form.jsp");
+ }
+ %>
+ 
+ 
+ 

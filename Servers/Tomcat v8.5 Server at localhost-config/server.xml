@@ -60,7 +60,7 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
     -->
-    <Connector connectionTimeout="20000" port="8090" protocol="HTTP/1.1" redirectPort="8443"/>
+    <Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443"/>
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="javaweb10" path="/javaweb10" reloadable="true" source="org.eclipse.jst.jee.server:javaweb10"/><Context docBase="javaweb11" path="/javaweb11" reloadable="true" source="org.eclipse.jst.jee.server:javaweb11"/><Context docBase="dantalk" path="/dantalk" reloadable="true" source="org.eclipse.jst.jee.server:dantalk"/><Context docBase="dantalk1" path="/dantalk1" reloadable="true" source="org.eclipse.jst.jee.server:dantalk1"/></Host>
+      <Context docBase="test" path="/test" reloadable="true" source="org.eclipse.jst.jee.server:test"/><Context docBase="emall03" path="/emall03" reloadable="true" source="org.eclipse.jst.jee.server:emall03"/><Context docBase="withPet0425" path="/withPet0425" reloadable="true" source="org.eclipse.jst.jee.server:withPet0425"/><Context docBase="testProject" path="/testProject" reloadable="true" source="org.eclipse.jst.jee.server:testProject"/><Context docBase="1111" path="/1111" reloadable="true" source="org.eclipse.jst.jee.server:1111"/><Context docBase="memoapp" path="/" reloadable="true" source="org.eclipse.jst.jee.server:memoapp"/><Context docBase="WithPet_ver01_0426" path="/WithPet_ver01_0426" reloadable="true" source="org.eclipse.jst.jee.server:WithPet_ver01_0426"/><Context docBase="helloexam" path="/helloexam" reloadable="true" source="org.eclipse.jst.jee.server:helloexam"/></Host>
     </Engine>
   </Service>
 </Server>
