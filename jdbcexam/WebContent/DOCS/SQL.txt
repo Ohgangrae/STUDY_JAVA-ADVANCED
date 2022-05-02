@@ -93,3 +93,4 @@ DROP DATABASE univ;
 15 데이터베이스 만들기
 CREATE DATABASE news;
 
+ㅇ
