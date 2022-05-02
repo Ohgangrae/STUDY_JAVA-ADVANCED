@@ -7,12 +7,12 @@
 		<item value="NULL_RUNTIME"/>
 	</list>
 	<list key="J2EE_IMPORT_null">
+		<item value="C:\Users\oasis\Desktop\helloexam.war"/>
 		<item value="C:\Users\oasis\Desktop\노트북으로 넘길것\WithPet_ver01.war"/>
 		<item value="C:\Users\oasis\Desktop\노트북으로 넘길것\memoapp.war"/>
 		<item value="C:\Users\oasis\Documents\카카오톡 받은 파일\1111.war"/>
 		<item value="C:\Users\oasis\Documents\카카오톡 받은 파일\test0425.war"/>
 		<item value="C:\Users\oasis\Desktop\노트북으로 넘길것\withPet0425.war"/>
-		<item value="C:\Users\oasis\Desktop\노트북으로 넘길것\withPet.war"/>
 	</list>
 	<list key="J2EE_EXPORT_JST_WEB">
 		<item value="C:\Users\oasis\Documents\카카오톡 받은 파일\test0425.war"/>

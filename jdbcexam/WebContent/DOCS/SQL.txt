@@ -1,0 +1,95 @@
+
+CREATE TABLE `student` (
+   `sno` INT(11) NOT NULL,
+   `sname` VARCHAR(5) NULL DEFAULT NULL COLLATE 'utf8mb3_general_ci',
+   `syear` TINYINT(4) NULL DEFAULT NULL,
+   `sdept` VARCHAR(10) NULL DEFAULT NULL COLLATE 'utf8mb3_general_ci',
+   `saddr` VARCHAR(50) NULL DEFAULT NULL COLLATE 'utf8mb3_general_ci',
+   PRIMARY KEY (`sno`) USING BTREE
+)
+COLLATE='utf8mb3_general_ci'
+ENGINE=InnoDB
+;
+
+
+
+INSERT INTO student VALUES (195712,"조아라",1,"멀티","부산");
+INSERT INTO student VALUES (179752,"홍길동",3,"전상","광주");
+
+INSERT INTO student VALUES (184682,"나매력",2,"전상","제주");
+INSERT INTO student VALUES (172634,"이천사",3,"컴공","광주");
+
+INSERT INTO student VALUES (183517,"김보배",2,"멀티","전남");
+INSERT INTO student VALUES (160739,"신입생",4,"컴공","광주");
+
+
+
+
+
+1 테이블의 모든 데이터 검색
+SELECT * FROM student;
+
+
+2 테이블의 특정 열들만  검색
+SELECT sno, sname FROM student;
+
+
+3 조건 2가지를 모두 만족하는 데이터만 검색
+SELECT sname, syear, sdept 
+FROM student
+WHERE (syear > 2) AND (saddr="광주");
+
+
+4 학과가 컴공인 학생들의 학년과 이름을 검색 
+(단 학년은 내림차순 이름은 올림차순)
+SELECT sname, syear
+FROM student
+WHERE sdept = "컴공"
+ORDER BY syear DESC, sname;
+
+
+5 대학에 개설된 학과의 이름을 검색 (단 중복 제거)
+SELECT DISTINCT sdept
+FROM student;
+
+6 대학에 재학 중인 학생의 수를 검색
+SELECT COUNT(*)
+FROM student;
+
+7 대학에 개설된 학과 수 검색 (중복 제거)
+SELECT count(DISTINCT sdept)
+FROM student;
+
+8 16년도 입학한 학생들의 학번과 이름을 검색    like
+
+SELECT sname, sno
+FROM student
+WHERE sno like '16%';
+
+9 학번이 160001인 학생의 주소를 '광주'로 업데이트 하세요
+UPDATE student 
+SET saddr="광주" 
+WHERE sno = 160001;
+
+10 전체 학생의 학년을 3으로 업데이트 하시오. (조심, 모두변경)
+UPDATE student 
+SET syear=3;
+
+11 학번이 160001인 학생의 정보를 테이블에서 완전히 삭제
+DELETE
+FROM student
+WHERE sno=160001;
+
+12 학생테이블 전체의 내용을 완전히 삭제하시오.(조심, 모두 삭제)
+DELETE
+FROM student;
+
+13 student 테이블 완전히 삭제 (조심, 모두 삭제)
+DROP TABLE student;
+
+14 univ 데이터베이스 완전히 삭제 (조심, 모두 삭제)
+DROP DATABASE univ;
+
+15 데이터베이스 만들기
+CREATE DATABASE news;
+
