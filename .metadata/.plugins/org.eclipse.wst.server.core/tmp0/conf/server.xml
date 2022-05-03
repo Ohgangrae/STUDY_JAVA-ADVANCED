@@ -166,7 +166,7 @@
 	<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxIdle="4" maxTotal="16" maxWaitMillis="-1" name="jdbc/withpet" password="withpet" type="javax.sql.DataSource" url="jdbc:mysql://3.35.234.2/withpet" username="withpet"/>
 	
 
-</Context><Context docBase="C:\eclipse\javaadvclass\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\helloexam" path="/helloexam" reloadable="true" source="org.eclipse.jst.jee.server:helloexam"/><Context docBase="C:\eclipse\javaadvclass\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\newsapp" path="/newsapp" reloadable="true" source="org.eclipse.jst.jee.server:newsapp"/></Host>
+</Context><Context docBase="C:\eclipse\javaadvclass\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\helloexam" path="/helloexam" reloadable="true" source="org.eclipse.jst.jee.server:helloexam"/><Context docBase="C:\eclipse\javaadvclass\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\newsapp" path="/newsapp" reloadable="true" source="org.eclipse.jst.jee.server:newsapp"/><Context docBase="C:\eclipse\javaadvclass\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\helloexam0502" path="/helloexam0502" reloadable="true" source="org.eclipse.jst.jee.server:helloexam0502"/></Host>
     </Engine>
   </Service>
 </Server>
